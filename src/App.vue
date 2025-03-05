@@ -1,26 +1,33 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <img :src="imageUrl" alt="image-1" class="image1">
+  <DateBadge class="date-badge"></DateBadge>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import DateBadge from './components/date-badge.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    DateBadge
+  },
+  data() {
+    return {
+      imageUrl: require('@/assets/tmsph-ls-midafood.jpeg') 
+    };
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.image1 {
+  width: 1500px; 
+  height: auto;  
+}
+
+.date-badge{
+  position: absolute;
+  top: -20px; 
+  left: 20px; 
 }
 </style>
