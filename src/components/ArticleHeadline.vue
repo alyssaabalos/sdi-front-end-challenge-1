@@ -4,6 +4,10 @@
       <h1 class="article-title">
         {{ articleTitle }}
       </h1>
+      <p class="article-desc">
+            {{ articleDescription }}
+      </p>
+
     </div>
   </template>
   
@@ -11,7 +15,8 @@
   export default {
     data() {
       return {
-        articleTitle: "Toyota Mobility Solutions PH empowers seafood wholesaler Mida Food with digital logistics platform"
+        articleTitle: "Toyota Mobility Solutions PH empowers seafood wholesaler Mida Food with digital logistics platform",
+        articleDescription: "Logistics platform addresses limitations in Mida's food delivery operations"
       };
     }
   };
@@ -34,6 +39,14 @@
     color: #2b3a48;
     line-height: 1.4;
     font-family: 'Roboto', sans-serif;
+  }
+
+  .article-desc{
+    font-size: 20px;
+    color: #2b3a48;
+    line-height: 1.4;
+    font-family: 'Roboto', sans-serif;
+
   }
   </style>
   
