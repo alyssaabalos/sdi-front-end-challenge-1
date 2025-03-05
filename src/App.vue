@@ -1,8 +1,7 @@
 <template>
- 
- 
-  <!-- <div id="divider"></div> -->
+
   <ArticleHeadline></ArticleHeadline>
+    
   <NewsPagination :totalPages="57" :currentPage="currentPage" @page-change="changePage" />
 </template>
 
@@ -35,9 +34,13 @@ export default {
 </script>
 
 <style>
-.image1 {
-  width: 1409px; 
-  height: auto;  
+
+#app {
+  position: absolute;
+  top: -80px !important;
+  left: 0;
+  width: 100%;
+  margin: 11px !important;
 }
 
 .date-badge{
@@ -46,10 +49,7 @@ export default {
   left: 20px; 
 }
 
-#divider{
-  width: 1410px; 
-  height: 2px;  
-  background-color: rgba(143, 142, 142, 0.393); 
-  margin-top: 5px; 
-}
+
+
+
 </style>

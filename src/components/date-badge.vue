@@ -6,13 +6,54 @@
     </div>
   </template>
   
-  <script setup>
-  import { ref } from 'vue';
-  
+  <script>
+import { ref } from 'vue';
 
-  const day = ref(13);
-  const month = ref('JAN');
-  </script>
+// eslint-disable-next-line no-unused-vars
+import { computed, watch } from 'vue'; 
+
+export default {
+  data() {
+    return {
+      articles: [],
+      selectedArticleId: null, 
+      day: ref(null),
+      month: ref(null),
+    };
+  },
+
+  computed: {
+    selectedArticle() {
+      return this.articles.find(article => article.id === this.selectedArticleId) || {};
+    }
+  },
+
+  async created() {
+    try {
+      const response = await fetch('/news.json');
+      this.articles = await response.json();
+
+      if (this.articles.length > 0) {
+        this.selectedArticleId = this.articles[0].id;
+      }
+    } catch (error) {
+      console.error("Error loading JSON:", error);
+    }
+  },
+
+  watch: {
+    selectedArticle(newArticle) {
+      if (newArticle && newArticle.created_at) {
+        const createdAt = new Date(newArticle.created_at);
+        this.day = createdAt.getDate();
+        this.month = createdAt.toLocaleString('en-US', { month: 'short' }).toUpperCase();
+      }
+    }
+  }
+};
+</script>
+
+  
   
   <style scoped>
   .date-badge {

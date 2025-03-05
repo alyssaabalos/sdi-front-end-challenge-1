@@ -3,6 +3,7 @@
     <div class="image-wrapper">
       <DateBadge class="badge-position" />
       <img v-if="selectedArticle.image_url" :src="getImageUrl(selectedArticle.image_url)" alt="Article Image" class="article-image">
+      <div id="divider"></div>
     </div>
 
     <div class="article-header">
@@ -75,6 +76,7 @@ export default {
 .author{
   margin-top: 50px;
   color: red;
+  font-size: 20px;
 }
 .article-container {
   position: relative;
@@ -104,4 +106,12 @@ export default {
   left: 10px; 
   z-index: 20;
 }
+
+#divider{
+  width: 1410px; 
+  height: 2px;  
+  background-color: rgba(143, 142, 142, 0.393); 
+  margin-top: 50px; 
+}
+
 </style>
