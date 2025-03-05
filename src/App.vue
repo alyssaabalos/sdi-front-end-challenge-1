@@ -2,15 +2,18 @@
   <img :src="imageUrl" alt="image-1" class="image1">
   <DateBadge class="date-badge"></DateBadge>
   <div id="divider"></div>
+  <ArticleHeadline></ArticleHeadline>
 </template>
 
 <script>
 import DateBadge from './components/date-badge.vue'
+import ArticleHeadline from './components/ArticleHeadline.vue';
 
 export default {
   name: 'App',
   components: {
-    DateBadge
+    DateBadge,
+    ArticleHeadline
   },
   data() {
     return {
