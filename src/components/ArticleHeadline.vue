@@ -120,12 +120,14 @@ export default {
 .read-article{
   font-family: 'Roboto', sans-serif;
   text-decoration: underline;
+  font-weight: bold;
+  color: rgba(46, 45, 45, 0.931); 
 }
 #divider{
   width: 1390px; 
   height: 2px;  
   background-color: rgba(143, 142, 142, 0.393); 
-  margin-top: 50px; 
+  margin-top: 20px; 
 }
 
 </style>
