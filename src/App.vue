@@ -1,20 +1,20 @@
 <template>
-  <img :src="imageUrl" alt="image-1" class="image1">
-  <DateBadge class="date-badge"></DateBadge>
-  <div id="divider"></div>
+ 
+ 
+  <!-- <div id="divider"></div> -->
   <ArticleHeadline></ArticleHeadline>
   <NewsPagination :totalPages="57" :currentPage="currentPage" @page-change="changePage" />
 </template>
 
 <script>
-import DateBadge from './components/date-badge.vue'
+
 import ArticleHeadline from './components/ArticleHeadline.vue';
 import NewsPagination from './components/NewsPagination.vue';
 
 export default {
   name: 'App',
   components: {
-    DateBadge,
+   
     ArticleHeadline,
     NewsPagination
   },
