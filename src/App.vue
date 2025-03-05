@@ -3,22 +3,33 @@
   <DateBadge class="date-badge"></DateBadge>
   <div id="divider"></div>
   <ArticleHeadline></ArticleHeadline>
+  <NewsPagination :totalPages="57" :currentPage="currentPage" @page-change="changePage" />
 </template>
 
 <script>
 import DateBadge from './components/date-badge.vue'
 import ArticleHeadline from './components/ArticleHeadline.vue';
+import NewsPagination from './components/NewsPagination.vue';
 
 export default {
   name: 'App',
   components: {
     DateBadge,
-    ArticleHeadline
+    ArticleHeadline,
+    NewsPagination
   },
   data() {
     return {
-      imageUrl: require('@/assets/tmsph-ls-midafood.jpeg') 
+      imageUrl: require('@/assets/tmsph-ls-midafood.jpeg'),
+      currentPage: 11, 
+  
     };
+  },
+
+  methods: {
+    changePage(newPage) {
+      this.currentPage = newPage;
+    },
   }
 }
 </script>

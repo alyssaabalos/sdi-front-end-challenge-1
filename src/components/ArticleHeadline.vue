@@ -7,6 +7,9 @@
       <p class="article-desc">
             {{ articleDescription }}
       </p>
+      <p class="read-article">
+        READ ARTICLE
+      </p>
 
     </div>
   </template>
@@ -47,6 +50,15 @@
     line-height: 1.4;
     font-family: 'Roboto', sans-serif;
 
+  }
+
+  .read-article{
+    font-size: 14px;
+    font-weight: bold;
+    color: #2b3a48;
+    line-height: 1.4;
+    font-family: 'Roboto', sans-serif;
+    text-decoration-line: underline;
   }
   </style>
   
