@@ -1,6 +1,7 @@
 <template>
   <img :src="imageUrl" alt="image-1" class="image1">
   <DateBadge class="date-badge"></DateBadge>
+  <div id="divider"></div>
 </template>
 
 <script>
@@ -21,7 +22,7 @@ export default {
 
 <style>
 .image1 {
-  width: 1500px; 
+  width: 1409px; 
   height: auto;  
 }
 
@@ -29,5 +30,12 @@ export default {
   position: absolute;
   top: -20px; 
   left: 20px; 
+}
+
+#divider{
+  width: 1410px; 
+  height: 2px;  
+  background-color: rgba(143, 142, 142, 0.393); 
+  margin-top: 5px; 
 }
 </style>

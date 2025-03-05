@@ -16,8 +16,8 @@
   
   <style scoped>
   .date-badge {
-    width: 60px;
-    height: 60px;
+    width: 90px;
+    height: 90px;
     background-color: red;
     color: white;
     font-weight: bold;
@@ -34,7 +34,7 @@
   
  
   .date-number {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     line-height: 1;
   }
@@ -48,10 +48,10 @@
 
   .triangle {
     position: absolute;
-    bottom: 4px;
+    bottom: 5px;
     right: 4px;
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     background-color: white;
     clip-path: polygon(100% 0, 0 100%, 100% 100%);
   }
