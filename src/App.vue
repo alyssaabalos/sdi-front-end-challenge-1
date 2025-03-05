@@ -40,7 +40,7 @@ export default {
   top: -80px !important;
   left: 0;
   width: 100%;
-  margin: 11px !important;
+  margin: 12px !important;
 }
 
 .date-badge{

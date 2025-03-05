@@ -3,6 +3,7 @@
     <div class="image-wrapper">
       <DateBadge class="badge-position" />
       <img v-if="selectedArticle.image_url" :src="getImageUrl(selectedArticle.image_url)" alt="Article Image" class="article-image">
+      <ShareButton></ShareButton>
       <div id="divider"></div>
     </div>
 
@@ -26,10 +27,12 @@
 
 <script>
 import DateBadge from '@/components/date-badge.vue'; 
+import ShareButton from '@/components/ShareButton.vue'
 
 export default {
   components: {
-    DateBadge
+    DateBadge,
+    ShareButton
   },
 
   data() {
@@ -80,11 +83,17 @@ export default {
 }
 .article-container {
   position: relative;
-  width: 100%;
+  width: 97%;
+  margin-left: 10px;
 }
 
 .article-header{
   font-family: 'Roboto', sans-serif;
+}
+
+.article-desc{
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
 }
 
 
@@ -96,19 +105,24 @@ export default {
 
 .article-image {
   width: 100%;
-  max-height: 500px;
+  max-height: 600px;
   object-fit: cover;
 }
 
 .badge-position {
   position: absolute;
-  top: 515px !important; 
+  top: 615px !important; 
   left: 10px; 
   z-index: 20;
 }
 
+
+.read-article{
+  font-family: 'Roboto', sans-serif;
+  text-decoration: underline;
+}
 #divider{
-  width: 1410px; 
+  width: 1390px; 
   height: 2px;  
   background-color: rgba(143, 142, 142, 0.393); 
   margin-top: 50px; 
