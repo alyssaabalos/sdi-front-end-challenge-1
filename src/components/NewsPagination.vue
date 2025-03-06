@@ -89,4 +89,22 @@ export default {
   border-radius: 4px;
   background-color: white;
 }
+
+@media (max-width: 768px) {
+  .pagination-container {
+    flex-wrap: wrap; 
+    justify-content: left; 
+    gap: 3px; 
+    display: inline-block;
+  }
+
+  .pagination-button, 
+  .pagination-ellipsis {
+    padding: 6px 10px; 
+    font-size: 12px; 
+    min-width: 30px; 
+    color: black;
+  }
+}
+
 </style>
