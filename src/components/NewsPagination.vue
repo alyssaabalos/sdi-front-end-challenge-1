@@ -68,6 +68,7 @@ export default {
   border-radius: 4px;
   background-color: white;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  color: black;
 }
 
 .pagination-button:hover {

@@ -85,6 +85,7 @@ export default {
   position: relative;
   width: 97%;
   margin-left: 10px;
+  margin-top: -55px;
 }
 
 .article-header{
@@ -132,6 +133,9 @@ export default {
 }
 
 @media (max-width: 768px) {
+  .article-container{
+    margin-top: -65px;
+  }
   .article-image{
     max-width: 500px;
     display: block;
