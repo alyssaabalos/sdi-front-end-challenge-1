@@ -146,5 +146,12 @@ export default {
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
   }
+
+  #divider{
+    width: 385px; 
+    height: 2px;  
+    background-color: rgba(143, 142, 142, 0.393); 
+    margin-top: 20px; 
+  }
 }
 </style>
