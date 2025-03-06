@@ -68,6 +68,10 @@ export default {
   border-radius: 4px;
   background-color: white;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+<<<<<<< HEAD
+=======
+  color: black;
+>>>>>>> dev
 }
 
 .pagination-button:hover {
@@ -89,4 +93,25 @@ export default {
   border-radius: 4px;
   background-color: white;
 }
+<<<<<<< HEAD
+=======
+
+
+@media (max-width: 768px) {
+  .pagination-container {
+    flex-wrap: wrap; 
+    justify-content: left; 
+    gap: 3px; 
+    display: inline-block;
+  }
+  
+
+  .pagination-button, 
+  .pagination-ellipsis {
+    padding: 6px 10px;
+    font-size: 12px; 
+    min-width: 30px; 
+  }
+}
+>>>>>>> dev
 </style>

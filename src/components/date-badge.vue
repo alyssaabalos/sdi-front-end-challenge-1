@@ -71,6 +71,7 @@ export default {
     transform: skew(-10deg);
     border-radius: 0px;
     font-family: Arial, sans-serif;
+    margin-left: 20px;
   }
   
  
@@ -96,5 +97,15 @@ export default {
     background-color: white;
     clip-path: polygon(100% 0, 0 100%, 100% 100%);
   }
+
+  @media (max-width: 768px) {
+    .date-badge {
+      transform: translateY(-280px); 
+      width: 70px;
+      height: 70px;
+      margin-left: 2px;
+    }
+  }
+
   </style>
   

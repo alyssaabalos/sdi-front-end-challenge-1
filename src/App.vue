@@ -1,7 +1,5 @@
 <template>
-
   <ArticleHeadline></ArticleHeadline>
-    
   <NewsPagination :totalPages="57" :currentPage="currentPage" @page-change="changePage" />
 </template>
 
@@ -35,21 +33,31 @@ export default {
 
 <style>
 
-#app {
-  position: absolute;
-  top: -80px !important;
-  left: 0;
+html, body {
   width: 100%;
-  margin: 12px !important;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-.date-badge{
-  position: absolute;
-  top: -20px; 
-  left: 20px; 
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
 }
 
 
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+    overflow-x: hidden;
+  }
 
-
+  .date-badge {
+    font-size: 12px;
+    padding: 5px;
+  }
+}
 </style>
