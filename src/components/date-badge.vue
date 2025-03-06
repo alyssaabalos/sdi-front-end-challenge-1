@@ -100,10 +100,11 @@ export default {
 
   @media (max-width: 768px) {
     .date-badge {
-      transform: translateY(-280px); 
+      transform: translateY(-280px) skew(-10deg);
       width: 70px;
       height: 70px;
       margin-left: 2px;
+      
     }
   }
 
