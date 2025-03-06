@@ -35,4 +35,18 @@
         font-family: 'Open Sans', sans-serif;
         cursor: pointer;
     }
+
+    @media (max-width: 768px) {
+      .share-icon {
+        width: 16px; 
+        height: auto;
+        margin-right: 2px; 
+      }
+      .share-btn {
+        color: rgba(77, 75, 75, 0.861);
+        font-family: 'Open Sans', sans-serif;
+        cursor: pointer;
+        margin-right: 15px;
+      }
+    }
 </style>

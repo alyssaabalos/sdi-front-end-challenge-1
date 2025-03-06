@@ -107,6 +107,7 @@ export default {
   width: 100%;
   max-height: 600px;
   object-fit: cover;
+  margin-left: 10px;
 }
 
 .badge-position {
@@ -130,4 +131,16 @@ export default {
   margin-top: 20px; 
 }
 
+@media (max-width: 768px) {
+  .article-image{
+    max-width: 500px;
+    display: block;
+    margin-left: -1px;
+  }
+
+  .article-header{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+  }
+}
 </style>

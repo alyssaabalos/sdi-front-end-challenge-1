@@ -96,5 +96,14 @@ export default {
     background-color: white;
     clip-path: polygon(100% 0, 0 100%, 100% 100%);
   }
+
+  @media (max-width: 768px) {
+    .date-badge {
+      transform: translateY(-280px); 
+      width: 70px;
+      height: 70px;
+    }
+  }
+
   </style>
   
